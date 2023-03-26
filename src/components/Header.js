@@ -1,12 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Food from "../assets/Food.jpg";
 import "./Header.css";
+import Food from "../assets/Food.jpg";
 
-const Header = () => {
+
+
+function Header() {
   return (
     <header>
-      <div className="left-side">
+      <div id="home" className="left-side">
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>
         <p>
@@ -14,7 +15,7 @@ const Header = () => {
           recipes served with a modern twist.
         </p>
         <button>
-          <Link to="/booking">Reserve a table</Link>
+          <a href="#Reserve">Reserve a Table</a>
         </button>
       </div>
       <div className="right-side">
@@ -24,7 +25,7 @@ const Header = () => {
         />
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

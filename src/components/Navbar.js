@@ -1,17 +1,14 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import "./Navbar.css";
 import Logo from "../assets/Logo.svg";
-import "./NavBar.css";
 
-function NavBar() {
+function Navbar() {
   return (
     <nav>
-      <Link to="/">
-        <img src={Logo} alt="Little Lemon Logo" />
-      </Link>
+      <img src={Logo} alt="Little lemon"/>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <a href="#home">Home</a>
         </li>
         <li>
           <a href="#about">About</a>
@@ -20,7 +17,7 @@ function NavBar() {
           <a href="#menu">Menu</a>
         </li>
         <li>
-          <Link to="/booking">Reservations</Link>
+          <a href="#resevation">Reservation</a>
         </li>
         <li>
           <a href="#order-online">Order Online</a>
@@ -30,7 +27,7 @@ function NavBar() {
         </li>
       </ul>
     </nav>
-  );
+  )
 }
 
-export default NavBar;
+export default Navbar
